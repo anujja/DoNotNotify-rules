@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Uber Eats — promotional spam",
+  "description": "Blocks promotional notification spam (\"offer\", \"discount\", \"free delivery\", \"cashback\") from Uber Eats. Order and delivery updates are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Uber Eats",
+      "packageName": "com.ubercab.eats",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(offer|discount|free delivery|cashback|use code|save|deal).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

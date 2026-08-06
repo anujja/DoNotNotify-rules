@@ -1,0 +1,162 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Engagement bait starter pack",
+  "description": "Blocks engagement-bait notifications (recommendations, trending, streaks, \"come back\" nags) across popular social and streaming apps in one import. Direct messages are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Instagram",
+      "packageName": "com.instagram.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(story|posted|new post|reel|trending|recommended|we miss you|come back).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Facebook",
+      "packageName": "com.facebook.katana",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(story|new post|suggested for you|people you may know|trending|live now).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "YouTube",
+      "packageName": "com.google.android.youtube",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new video|trending|recommended|shorts you may like|live now).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Duolingo",
+      "packageName": "com.duolingo",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(streak|practice now|keep your streak|come back|haven't practiced).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Netflix",
+      "packageName": "com.netflix.mediaclient",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new episode|just dropped|now streaming|watch now|premiere).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Prime Video",
+      "packageName": "com.amazon.avod.thirdpartyclient",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(watch now|trending|new episode|stream now|just released).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Candy Crush",
+      "packageName": "com.king.candycrushsaga",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(energy|lives are full|bonus|daily reward|challenge|event starting).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "X (Twitter)",
+      "packageName": "com.twitter.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(trending|new tweet|recommended for you|space starting|who to follow|for you).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "TikTok",
+      "packageName": "com.zhiliaoapp.musically",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(recommended|for you|new video|trending|live now|just posted).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Snapchat",
+      "packageName": "com.snapchat.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(streak|snap|story|new story|they sent a snap|discover|memories).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Reddit",
+      "packageName": "com.reddit.frontpage",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new comment|new post|trending|recommended|mention|reply|mod notice).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Spotify",
+      "packageName": "com.spotify.music",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new release|recommended playlist|your mix|podcast you may like|concert near you|new episode).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Tinder",
+      "packageName": "com.tinder",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new match|someone likes you|message from|you got a match|top picks).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Twitch",
+      "packageName": "tv.twitch.android.app",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(live now|stream starting|recommended for you|new clip|go live|channel).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Disney+",
+      "packageName": "com.disney.disneyplus",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new episode|just added|premiere|watch now|season now streaming).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Hulu",
+      "packageName": "com.hulu.plus",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new episode|watch now|premiere|just dropped|recommended).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "LinkedIn",
+      "packageName": "com.linkedin.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(job recommended|people you may know|someone viewed your profile|we found a job|new message|recommended).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

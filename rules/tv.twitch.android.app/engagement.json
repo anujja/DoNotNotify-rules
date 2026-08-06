@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Twitch — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"live now\", \"stream starting\", \"recommended for you\", \"new clip\") from Twitch. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Twitch",
+      "packageName": "tv.twitch.android.app",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(live now|stream starting|recommended for you|new clip|go live|channel).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

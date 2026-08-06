@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Facebook — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"story\", \"new post\", \"suggested for you\", \"people you may know\") from Facebook. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Facebook",
+      "packageName": "com.facebook.katana",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(story|new post|suggested for you|people you may know|trending|live now).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

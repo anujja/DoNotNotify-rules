@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Hulu — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"new episode\", \"watch now\", \"premiere\", \"just dropped\") from Hulu. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Hulu",
+      "packageName": "com.hulu.plus",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new episode|watch now|premiere|just dropped|recommended).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

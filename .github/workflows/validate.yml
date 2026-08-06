@@ -1,0 +1,26 @@
+name: Validate rules
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Structure and format (mirrors schema/rules.schema.json)
+        run: python3 scripts/validate.py
+
+      - name: Regex compile check (Java flavor, same engine as the app)
+        run: java scripts/ValidateRegex.java build/regexes.txt
+
+      - name: index.json is up to date
+        run: python3 scripts/generate_index.py --check

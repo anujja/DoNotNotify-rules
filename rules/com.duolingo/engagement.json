@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Duolingo — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"streak\", \"practice now\", \"keep your streak\", \"come back\") from Duolingo. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Duolingo",
+      "packageName": "com.duolingo",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(streak|practice now|keep your streak|come back|haven't practiced).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

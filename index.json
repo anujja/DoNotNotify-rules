@@ -1,0 +1,509 @@
+{
+  "indexVersion": 1,
+  "files": [
+    {
+      "path": "bundles/engagement-bait-starter.json",
+      "title": "Engagement bait starter pack",
+      "description": "Blocks engagement-bait notifications (recommendations, trending, streaks, \"come back\" nags) across popular social and streaming apps in one import. Direct messages are unaffected.",
+      "packages": [
+        "com.amazon.avod.thirdpartyclient",
+        "com.disney.disneyplus",
+        "com.duolingo",
+        "com.facebook.katana",
+        "com.google.android.youtube",
+        "com.hulu.plus",
+        "com.instagram.android",
+        "com.king.candycrushsaga",
+        "com.linkedin.android",
+        "com.netflix.mediaclient",
+        "com.reddit.frontpage",
+        "com.snapchat.android",
+        "com.spotify.music",
+        "com.tinder",
+        "com.twitter.android",
+        "com.zhiliaoapp.musically",
+        "tv.twitch.android.app"
+      ],
+      "ruleCount": 17,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "bundles/promo-spam-starter.json",
+      "title": "Promo spam starter pack",
+      "description": "Blocks promotional notification spam (offers, sales, coupons, cashback) across popular shopping and food delivery apps in one import. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.alibaba.aliexpresshd",
+        "com.amazon.mShop.android.shopping",
+        "com.application.zomato",
+        "com.dd.doordash",
+        "com.ebay.mobile",
+        "com.etsy.android",
+        "com.flipkart.android",
+        "com.grubhub.android",
+        "com.myntra.android",
+        "com.pinterest",
+        "com.truecaller",
+        "com.ubercab.eats",
+        "in.swiggy.android"
+      ],
+      "ruleCount": 13,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.alibaba.aliexpresshd/promos.json",
+      "title": "AliExpress — promotional spam",
+      "description": "Blocks promotional notification spam (\"sale\", \"coupon\", \"deal\", \"flash sale\") from AliExpress. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.alibaba.aliexpresshd"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.amazon.avod.thirdpartyclient/engagement.json",
+      "title": "Prime Video — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"watch now\", \"trending\", \"new episode\", \"stream now\") from Prime Video. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.amazon.avod.thirdpartyclient"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.amazon.mShop.android.shopping/promos.json",
+      "title": "Amazon — promotional spam",
+      "description": "Blocks promotional notification spam (\"deal\", \"offer\", \"discount\", \"sale\") from Amazon. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.amazon.mShop.android.shopping"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.application.zomato/promos.json",
+      "title": "Zomato — promotional spam",
+      "description": "Blocks promotional notification spam (\"offer\", \"discount\", \"cashback\", \"limited time\") from Zomato. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.application.zomato"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.dd.doordash/promos.json",
+      "title": "DoorDash — promotional spam",
+      "description": "Blocks promotional notification spam (\"offer\", \"discount\", \"free delivery\", \"cashback\") from DoorDash. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.dd.doordash"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.disney.disneyplus/engagement.json",
+      "title": "Disney+ — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"new episode\", \"just added\", \"premiere\", \"watch now\") from Disney+. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.disney.disneyplus"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.duolingo/engagement.json",
+      "title": "Duolingo — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"streak\", \"practice now\", \"keep your streak\", \"come back\") from Duolingo. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.duolingo"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.ebay.mobile/promos.json",
+      "title": "eBay — promotional spam",
+      "description": "Blocks promotional notification spam (\"sale\", \"offer\", \"auction ending\", \"you were outbid\") from eBay. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.ebay.mobile"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.etsy.android/promos.json",
+      "title": "Etsy — promotional spam",
+      "description": "Blocks promotional notification spam (\"sale\", \"coupon\", \"discount\", \"deal\") from Etsy. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.etsy.android"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.facebook.katana/engagement.json",
+      "title": "Facebook — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"story\", \"new post\", \"suggested for you\", \"people you may know\") from Facebook. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.facebook.katana"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.flipkart.android/promos.json",
+      "title": "Flipkart — promotional spam",
+      "description": "Blocks promotional notification spam (\"offer\", \"discount\", \"sale\", \"deal\") from Flipkart. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.flipkart.android"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.google.android.apps.nbu.paisa.user/rewards.json",
+      "title": "GPay — reward scratch cards",
+      "description": "Blocks GPay \"You earned a reward! Tap to reveal\" scratch-card notifications. Payment notifications are unaffected.",
+      "packages": [
+        "com.google.android.apps.nbu.paisa.user"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.google.android.youtube/engagement.json",
+      "title": "YouTube — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"new video\", \"trending\", \"recommended\", \"shorts you may like\") from YouTube. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.google.android.youtube"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.grubhub.android/promos.json",
+      "title": "Grubhub — promotional spam",
+      "description": "Blocks promotional notification spam (\"offer\", \"discount\", \"free delivery\", \"coupon\") from Grubhub. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.grubhub.android"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.hulu.plus/engagement.json",
+      "title": "Hulu — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"new episode\", \"watch now\", \"premiere\", \"just dropped\") from Hulu. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.hulu.plus"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.instagram.android/engagement.json",
+      "title": "Instagram — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"story\", \"posted\", \"new post\", \"reel\") from Instagram. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.instagram.android"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.king.candycrushsaga/engagement.json",
+      "title": "Candy Crush — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"energy\", \"lives are full\", \"bonus\", \"daily reward\") from Candy Crush. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.king.candycrushsaga"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.linkedin.android/engagement.json",
+      "title": "LinkedIn — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"job recommended\", \"people you may know\", \"someone viewed your profile\", \"we found a job\") from LinkedIn. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.linkedin.android"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.mygate.user/allow-essentials.json",
+      "title": "Mygate — essentials only (ALLOWLIST)",
+      "description": "ALLOWLIST: only visitor/delivery check-in, approval, decline and invite notifications get through — everything else from MyGate is blocked. Allowlist rules block all non-matching notifications from the app.",
+      "packages": [
+        "com.mygate.user"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "ALLOWLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.myntra.android/promos.json",
+      "title": "Myntra — promotional spam",
+      "description": "Blocks promotional notification spam (\"sale\", \"flat [0-9]+%\", \"deal\", \"discount\") from Myntra. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.myntra.android"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.netflix.mediaclient/engagement.json",
+      "title": "Netflix — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"new episode\", \"just dropped\", \"now streaming\", \"watch now\") from Netflix. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.netflix.mediaclient"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.pinterest/promos.json",
+      "title": "Pinterest — promotional spam",
+      "description": "Blocks promotional notification spam (\"recommended for you\", \"new idea\", \"trending\", \"shop this\") from Pinterest. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.pinterest"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.reddit.frontpage/engagement.json",
+      "title": "Reddit — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"new comment\", \"new post\", \"trending\", \"recommended\") from Reddit. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.reddit.frontpage"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.snapchat.android/engagement.json",
+      "title": "Snapchat — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"streak\", \"snap\", \"story\", \"new story\") from Snapchat. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.snapchat.android"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.spotify.music/engagement.json",
+      "title": "Spotify — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"new release\", \"recommended playlist\", \"your mix\", \"podcast you may like\") from Spotify. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.spotify.music"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.tinder/engagement.json",
+      "title": "Tinder — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"new match\", \"someone likes you\", \"message from\", \"you got a match\") from Tinder. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.tinder"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.truecaller/promos.json",
+      "title": "Truecaller — promotional spam",
+      "description": "Blocks promotional notification spam (\"promotion\", \"upgrade\", \"premium\", \"offer\") from Truecaller. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.truecaller"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.twitter.android/engagement.json",
+      "title": "X (Twitter) — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"trending\", \"new tweet\", \"recommended for you\", \"space starting\") from X (Twitter). Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.twitter.android"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.ubercab.eats/promos.json",
+      "title": "Uber Eats — promotional spam",
+      "description": "Blocks promotional notification spam (\"offer\", \"discount\", \"free delivery\", \"cashback\") from Uber Eats. Order and delivery updates are unaffected.",
+      "packages": [
+        "com.ubercab.eats"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/com.zhiliaoapp.musically/engagement.json",
+      "title": "TikTok — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"recommended\", \"for you\", \"new video\", \"trending\") from TikTok. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "com.zhiliaoapp.musically"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/in.swiggy.android/promos.json",
+      "title": "Swiggy — promotional spam",
+      "description": "Blocks promotional notification spam (\"offer\", \"discount\", \"free delivery\", \"cashback\") from Swiggy. Order and delivery updates are unaffected.",
+      "packages": [
+        "in.swiggy.android"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    },
+    {
+      "path": "rules/tv.twitch.android.app/engagement.json",
+      "title": "Twitch — engagement bait",
+      "description": "Blocks engagement-bait notifications (\"live now\", \"stream starting\", \"recommended for you\", \"new clip\") from Twitch. Direct messages and account alerts are unaffected.",
+      "packages": [
+        "tv.twitch.android.app"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "anujja"
+    }
+  ]
+}

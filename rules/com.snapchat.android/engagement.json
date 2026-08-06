@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Snapchat — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"streak\", \"snap\", \"story\", \"new story\") from Snapchat. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Snapchat",
+      "packageName": "com.snapchat.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(streak|snap|story|new story|they sent a snap|discover|memories).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

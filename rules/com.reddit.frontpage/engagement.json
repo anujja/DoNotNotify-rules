@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Reddit — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"new comment\", \"new post\", \"trending\", \"recommended\") from Reddit. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Reddit",
+      "packageName": "com.reddit.frontpage",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new comment|new post|trending|recommended|mention|reply|mod notice).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

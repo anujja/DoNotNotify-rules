@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Instagram — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"story\", \"posted\", \"new post\", \"reel\") from Instagram. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Instagram",
+      "packageName": "com.instagram.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(story|posted|new post|reel|trending|recommended|we miss you|come back).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

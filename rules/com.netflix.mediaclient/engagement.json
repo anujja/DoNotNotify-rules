@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Netflix — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"new episode\", \"just dropped\", \"now streaming\", \"watch now\") from Netflix. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Netflix",
+      "packageName": "com.netflix.mediaclient",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new episode|just dropped|now streaming|watch now|premiere).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

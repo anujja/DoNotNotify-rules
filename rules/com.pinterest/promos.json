@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Pinterest — promotional spam",
+  "description": "Blocks promotional notification spam (\"recommended for you\", \"new idea\", \"trending\", \"shop this\") from Pinterest. Order and delivery updates are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Pinterest",
+      "packageName": "com.pinterest",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(recommended for you|new idea|trending|shop this|sale|coupon).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

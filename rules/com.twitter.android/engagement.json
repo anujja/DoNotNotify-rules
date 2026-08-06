@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "X (Twitter) — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"trending\", \"new tweet\", \"recommended for you\", \"space starting\") from X (Twitter). Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "X (Twitter)",
+      "packageName": "com.twitter.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(trending|new tweet|recommended for you|space starting|who to follow|for you).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

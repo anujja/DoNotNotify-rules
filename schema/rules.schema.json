@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/anujja/DoNotNotify-rules/main/schema/rules.schema.json",
+  "title": "DoNotNotify hosted rule list",
+  "description": "DoNotNotify rule export envelope (version 2) plus catalog metadata. scripts/validate.py is the authoritative implementation of these checks; this schema is the human/tooling-readable spec.",
+  "type": "object",
+  "required": ["version", "title", "description", "rules"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": 2 },
+    "locale": { "type": "string", "minLength": 2, "maxLength": 35 },
+    "title": { "type": "string", "minLength": 3, "maxLength": 100 },
+    "description": { "type": "string", "minLength": 10, "maxLength": 500 },
+    "maintainer": { "type": "string", "maxLength": 60 },
+    "rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/rule" }
+    }
+  },
+  "definitions": {
+    "rule": {
+      "type": "object",
+      "required": ["packageName", "appName", "ruleType", "isEnabled"],
+      "additionalProperties": false,
+      "anyOf": [
+        { "properties": { "titleFilter": { "type": "string", "minLength": 1 } }, "required": ["titleFilter"] },
+        { "properties": { "textFilter": { "type": "string", "minLength": 1 } }, "required": ["textFilter"] }
+      ],
+      "properties": {
+        "packageName": { "type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_]*(\\.[A-Za-z][A-Za-z0-9_]*)+$" },
+        "appName": { "type": "string", "minLength": 1, "maxLength": 60 },
+        "name": { "type": "string", "maxLength": 100 },
+        "titleFilter": { "type": ["string", "null"], "maxLength": 512 },
+        "titleMatchType": { "enum": ["CONTAINS", "REGEX"] },
+        "textFilter": { "type": ["string", "null"], "maxLength": 512 },
+        "textMatchType": { "enum": ["CONTAINS", "REGEX"] },
+        "ruleType": { "enum": ["DENYLIST", "ALLOWLIST", "STACK"] },
+        "isEnabled": { "type": "boolean" },
+        "advancedConfig": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "isTimeLimitEnabled": { "type": "boolean" },
+            "startTimeHour": { "type": "integer", "minimum": 0, "maximum": 23 },
+            "startTimeMinute": { "type": "integer", "minimum": 0, "maximum": 59 },
+            "endTimeHour": { "type": "integer", "minimum": 0, "maximum": 23 },
+            "endTimeMinute": { "type": "integer", "minimum": 0, "maximum": 59 }
+          }
+        }
+      }
+    }
+  }
+}

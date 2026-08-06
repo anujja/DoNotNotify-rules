@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "GPay — reward scratch cards",
+  "description": "Blocks GPay \"You earned a reward! Tap to reveal\" scratch-card notifications. Payment notifications are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "GPay",
+      "packageName": "com.google.android.apps.nbu.paisa.user",
+      "titleFilter": "You earned a reward!",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "Tap to reveal",
+      "textMatchType": "CONTAINS",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

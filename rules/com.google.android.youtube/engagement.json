@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "YouTube — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"new video\", \"trending\", \"recommended\", \"shorts you may like\") from YouTube. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "YouTube",
+      "packageName": "com.google.android.youtube",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new video|trending|recommended|shorts you may like|live now).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

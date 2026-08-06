@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Spotify — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"new release\", \"recommended playlist\", \"your mix\", \"podcast you may like\") from Spotify. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Spotify",
+      "packageName": "com.spotify.music",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new release|recommended playlist|your mix|podcast you may like|concert near you|new episode).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

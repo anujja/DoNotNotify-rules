@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Etsy — promotional spam",
+  "description": "Blocks promotional notification spam (\"sale\", \"coupon\", \"discount\", \"deal\") from Etsy. Order and delivery updates are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Etsy",
+      "packageName": "com.etsy.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(sale|coupon|discount|deal|limited time|price drop).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

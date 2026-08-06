@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Zomato — promotional spam",
+  "description": "Blocks promotional notification spam (\"offer\", \"discount\", \"cashback\", \"limited time\") from Zomato. Order and delivery updates are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Zomato",
+      "packageName": "com.application.zomato",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(offer|discount|cashback|limited time|save|deal).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

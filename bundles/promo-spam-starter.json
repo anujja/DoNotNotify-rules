@@ -1,0 +1,126 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Promo spam starter pack",
+  "description": "Blocks promotional notification spam (offers, sales, coupons, cashback) across popular shopping and food delivery apps in one import. Order and delivery updates are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Flipkart",
+      "packageName": "com.flipkart.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(offer|discount|sale|deal|coupon|cashback|limited time|flash sale).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Amazon",
+      "packageName": "com.amazon.mShop.android.shopping",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(deal|offer|discount|sale|coupon|cashback|today's deal|limited time).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Myntra",
+      "packageName": "com.myntra.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(sale|flat [0-9]+%|deal|discount|offer|flash sale|coupon|limited).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Swiggy",
+      "packageName": "in.swiggy.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(offer|discount|free delivery|cashback|use code|save).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Zomato",
+      "packageName": "com.application.zomato",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(offer|discount|cashback|limited time|save|deal).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Truecaller",
+      "packageName": "com.truecaller",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(promotion|upgrade|premium|offer|limited time|exclusive).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Pinterest",
+      "packageName": "com.pinterest",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(recommended for you|new idea|trending|shop this|sale|coupon).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Uber Eats",
+      "packageName": "com.ubercab.eats",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(offer|discount|free delivery|cashback|use code|save|deal).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "DoorDash",
+      "packageName": "com.dd.doordash",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(offer|discount|free delivery|cashback|use code|limited time|save).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Grubhub",
+      "packageName": "com.grubhub.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(offer|discount|free delivery|coupon|cashback|save|deal).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "eBay",
+      "packageName": "com.ebay.mobile",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(sale|offer|auction ending|you were outbid|price drop|coupon|deal).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "AliExpress",
+      "packageName": "com.alibaba.aliexpresshd",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(sale|coupon|deal|flash sale|limited time|discount|price drop).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "Etsy",
+      "packageName": "com.etsy.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(sale|coupon|discount|deal|limited time|price drop).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "AliExpress — promotional spam",
+  "description": "Blocks promotional notification spam (\"sale\", \"coupon\", \"deal\", \"flash sale\") from AliExpress. Order and delivery updates are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "AliExpress",
+      "packageName": "com.alibaba.aliexpresshd",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(sale|coupon|deal|flash sale|limited time|discount|price drop).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

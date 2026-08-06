@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Amazon — promotional spam",
+  "description": "Blocks promotional notification spam (\"deal\", \"offer\", \"discount\", \"sale\") from Amazon. Order and delivery updates are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Amazon",
+      "packageName": "com.amazon.mShop.android.shopping",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(deal|offer|discount|sale|coupon|cashback|today's deal|limited time).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

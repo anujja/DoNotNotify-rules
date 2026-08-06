@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "LinkedIn — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"job recommended\", \"people you may know\", \"someone viewed your profile\", \"we found a job\") from LinkedIn. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "LinkedIn",
+      "packageName": "com.linkedin.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(job recommended|people you may know|someone viewed your profile|we found a job|new message|recommended).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Disney+ — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"new episode\", \"just added\", \"premiere\", \"watch now\") from Disney+. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Disney+",
+      "packageName": "com.disney.disneyplus",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new episode|just added|premiere|watch now|season now streaming).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

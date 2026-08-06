@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Myntra — promotional spam",
+  "description": "Blocks promotional notification spam (\"sale\", \"flat [0-9]+%\", \"deal\", \"discount\") from Myntra. Order and delivery updates are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Myntra",
+      "packageName": "com.myntra.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(sale|flat [0-9]+%|deal|discount|offer|flash sale|coupon|limited).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Candy Crush — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"energy\", \"lives are full\", \"bonus\", \"daily reward\") from Candy Crush. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Candy Crush",
+      "packageName": "com.king.candycrushsaga",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(energy|lives are full|bonus|daily reward|challenge|event starting).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

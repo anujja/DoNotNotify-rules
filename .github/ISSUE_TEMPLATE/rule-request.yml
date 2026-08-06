@@ -1,0 +1,44 @@
+name: Rule request
+description: Request notification-blocking rules for an app (no JSON knowledge needed)
+title: "[Rule request] "
+labels: [rule-request]
+body:
+  - type: input
+    id: app-name
+    attributes:
+      label: App name
+      placeholder: e.g. Flipkart
+    validations:
+      required: true
+  - type: input
+    id: package-name
+    attributes:
+      label: Package name
+      description: The `id=` parameter in the app's Play Store URL, e.g. `com.flipkart.android`
+      placeholder: com.example.app
+    validations:
+      required: true
+  - type: textarea
+    id: block-examples
+    attributes:
+      label: Notifications to block
+      description: Paste the title and text of example notifications you want gone (redact anything personal).
+      placeholder: |
+        Title: MEGA SALE is live!
+        Text: Flat 80% off, limited time only
+    validations:
+      required: true
+  - type: textarea
+    id: keep-examples
+    attributes:
+      label: Notifications to keep
+      description: Examples of notifications from this app that must NOT be blocked (order updates, OTPs, messages…).
+    validations:
+      required: false
+  - type: input
+    id: locale
+    attributes:
+      label: Notification language
+      placeholder: e.g. en, es, hi
+    validations:
+      required: false

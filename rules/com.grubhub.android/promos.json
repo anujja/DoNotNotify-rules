@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Grubhub — promotional spam",
+  "description": "Blocks promotional notification spam (\"offer\", \"discount\", \"free delivery\", \"coupon\") from Grubhub. Order and delivery updates are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Grubhub",
+      "packageName": "com.grubhub.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(offer|discount|free delivery|coupon|cashback|save|deal).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

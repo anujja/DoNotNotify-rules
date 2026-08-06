@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Mygate — essentials only (ALLOWLIST)",
+  "description": "ALLOWLIST: only visitor/delivery check-in, approval, decline and invite notifications get through — everything else from MyGate is blocked. Allowlist rules block all non-matching notifications from the app.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Mygate",
+      "packageName": "com.mygate.user",
+      "titleMatchType": "CONTAINS",
+      "textFilter": ".*(checked|approv|declined|invite).*",
+      "textMatchType": "REGEX",
+      "ruleType": "ALLOWLIST",
+      "isEnabled": true
+    }
+  ]
+}

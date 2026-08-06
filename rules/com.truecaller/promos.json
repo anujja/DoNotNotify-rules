@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Truecaller — promotional spam",
+  "description": "Blocks promotional notification spam (\"promotion\", \"upgrade\", \"premium\", \"offer\") from Truecaller. Order and delivery updates are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Truecaller",
+      "packageName": "com.truecaller",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(promotion|upgrade|premium|offer|limited time|exclusive).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

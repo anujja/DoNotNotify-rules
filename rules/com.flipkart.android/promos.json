@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Flipkart — promotional spam",
+  "description": "Blocks promotional notification spam (\"offer\", \"discount\", \"sale\", \"deal\") from Flipkart. Order and delivery updates are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Flipkart",
+      "packageName": "com.flipkart.android",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(offer|discount|sale|deal|coupon|cashback|limited time|flash sale).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

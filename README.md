@@ -1,0 +1,67 @@
+# DoNotNotify community rules
+
+Community-maintained notification-blocking rule lists for [DoNotNotify](https://github.com/anujja/DoNotNotify) — like adblocker filter lists, but for Android notifications.
+
+Every file in this repo is a standard DoNotNotify rules export, so it imports directly into the app — any version, no update required.
+
+## How to use
+
+DoNotNotify is fully offline by design (no network permission), so installing rules is a download-and-import:
+
+1. Browse [`rules/`](rules/) (per-app lists) or [`bundles/`](bundles/) (curated multi-app packs)
+2. Open the file you want and download it (**Raw** → save, or the **⋯** menu → *Download*)
+3. In DoNotNotify: **Settings → Export/Import Rules → Import** and pick the downloaded file
+
+The app sanitizes everything on import: duplicate rules are skipped, invalid ones are dropped, and rule counts are shown so you can see exactly what was added.
+
+## Repository layout
+
+```
+rules/<packageName>/<slug>.json   # one rule list per file, grouped by target app
+                                  # locale variants: <slug>.<locale>.json (e.g. promos.es.json)
+bundles/<slug>.json               # curated packs spanning multiple apps
+index.json                        # generated catalog of every list (see scripts/)
+schema/rules.schema.json          # the file format, as JSON Schema
+```
+
+## File format
+
+The DoNotNotify export envelope, plus catalog metadata:
+
+```json
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Flipkart — promotional spam",
+  "description": "Blocks offer/sale/discount notification spam, keeps order updates.",
+  "maintainer": "your-github-handle",
+  "rules": [
+    {
+      "appName": "Flipkart",
+      "packageName": "com.flipkart.android",
+      "textFilter": "(?i).*(offer|discount|sale|deal|coupon).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}
+```
+
+`title`, `description`, and `maintainer` are catalog metadata — the app ignores them. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full field reference.
+
+## Contributing
+
+Rules for a new app, better patterns, locale variants — all welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md), then open a pull request. Every PR is validated by CI (format, regex compilation, size caps) and reviewed before merge.
+
+No JSON skills? [Request rules for an app](../../issues/new?template=rule-request.yml) instead.
+
+## Safety notes
+
+- Rules are plain data — patterns matched against notification title/text. They can't execute anything.
+- **ALLOWLIST rules block every notification from the app that *doesn't* match.** Lists containing them say so in their description; read it before importing.
+- Review what a list blocks before importing; check the app's Blocked tab afterwards if something seems to be missing.
+
+## License
+
+[MIT](LICENSE), same as DoNotNotify itself.

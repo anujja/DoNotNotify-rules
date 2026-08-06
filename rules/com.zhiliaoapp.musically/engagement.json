@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "TikTok — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"recommended\", \"for you\", \"new video\", \"trending\") from TikTok. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "TikTok",
+      "packageName": "com.zhiliaoapp.musically",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(recommended|for you|new video|trending|live now|just posted).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

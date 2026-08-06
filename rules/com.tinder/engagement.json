@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Tinder — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"new match\", \"someone likes you\", \"message from\", \"you got a match\") from Tinder. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Tinder",
+      "packageName": "com.tinder",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(new match|someone likes you|message from|you got a match|top picks).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

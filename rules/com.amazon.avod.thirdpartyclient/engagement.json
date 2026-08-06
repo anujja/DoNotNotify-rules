@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Prime Video — engagement bait",
+  "description": "Blocks engagement-bait notifications (\"watch now\", \"trending\", \"new episode\", \"stream now\") from Prime Video. Direct messages and account alerts are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "Prime Video",
+      "packageName": "com.amazon.avod.thirdpartyclient",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(watch now|trending|new episode|stream now|just released).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

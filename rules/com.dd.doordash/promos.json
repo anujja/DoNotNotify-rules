@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "DoorDash — promotional spam",
+  "description": "Blocks promotional notification spam (\"offer\", \"discount\", \"free delivery\", \"cashback\") from DoorDash. Order and delivery updates are unaffected.",
+  "maintainer": "anujja",
+  "rules": [
+    {
+      "appName": "DoorDash",
+      "packageName": "com.dd.doordash",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(offer|discount|free delivery|cashback|use code|limited time|save).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}
