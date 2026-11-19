@@ -312,7 +312,7 @@
     {
       "path": "rules/com.microsoft.appmanager/connection-status.json",
       "title": "Link to Windows — connection status",
-      "description": "Blocks connection status notifications (\"connecting\", \"connected\") from Link to Windows. Pairing, security prompts, and other alerts are unaffected.",
+      "description": "Blocks \"Your devices are connected.\" and \"Connecting to your PC...\" status notifications from Link to Windows. Disconnect alerts, camera-in-use notices, app sharing, and pairing prompts are unaffected. Note: these are ongoing notifications and may stay in the shade on older Android versions.",
       "packages": [
         "com.microsoft.appmanager"
       ],
