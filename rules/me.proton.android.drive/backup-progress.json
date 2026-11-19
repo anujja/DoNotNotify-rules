@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Proton Drive — backup progress",
+  "description": "Blocks the \"Backing up photos to Proton Drive\" / \"Preparing to back up\" status notification. Backup failures and other Proton Drive alerts are unaffected.",
+  "maintainer": "guarobi",
+  "rules": [
+    {
+      "appName": "Proton Drive",
+      "packageName": "me.proton.android.drive",
+      "titleFilter": "Backing up photos to Proton Drive",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "Preparing to back up",
+      "textMatchType": "CONTAINS",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

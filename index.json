@@ -492,6 +492,20 @@
       "maintainer": "anujja"
     },
     {
+      "path": "rules/me.proton.android.drive/backup-progress.json",
+      "title": "Proton Drive — backup progress",
+      "description": "Blocks the \"Backing up photos to Proton Drive\" / \"Preparing to back up\" status notification. Backup failures and other Proton Drive alerts are unaffected.",
+      "packages": [
+        "me.proton.android.drive"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "guarobi"
+    },
+    {
       "path": "rules/tv.twitch.android.app/engagement.json",
       "title": "Twitch — engagement bait",
       "description": "Blocks engagement-bait notifications (\"live now\", \"stream starting\", \"recommended for you\", \"new clip\") from Twitch. Direct messages and account alerts are unaffected.",
