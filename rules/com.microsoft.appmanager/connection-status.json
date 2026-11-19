@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Link to Windows — connection status",
+  "description": "Blocks connection status notifications (\"connecting\", \"connected\") from Link to Windows. Pairing, security prompts, and other alerts are unaffected.",
+  "maintainer": "recregt",
+  "rules": [
+    {
+      "appName": "Link to Windows",
+      "packageName": "com.microsoft.appmanager",
+      "titleMatchType": "CONTAINS",
+      "textFilter": "(?i).*(connecting|connected).*",
+      "textMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}

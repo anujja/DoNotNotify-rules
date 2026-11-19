@@ -310,6 +310,20 @@
       "maintainer": "anujja"
     },
     {
+      "path": "rules/com.microsoft.appmanager/connection-status.json",
+      "title": "Link to Windows — connection status",
+      "description": "Blocks connection status notifications (\"connecting\", \"connected\") from Link to Windows. Pairing, security prompts, and other alerts are unaffected.",
+      "packages": [
+        "com.microsoft.appmanager"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "recregt"
+    },
+    {
       "path": "rules/com.mygate.user/allow-essentials.json",
       "title": "Mygate — essentials only (ALLOWLIST)",
       "description": "ALLOWLIST: only visitor/delivery check-in, approval, decline and invite notifications get through — everything else from MyGate is blocked. Allowlist rules block all non-matching notifications from the app.",
