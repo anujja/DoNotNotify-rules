@@ -2,6 +2,8 @@
 
 Thanks for helping! This repo is moderated via pull requests; CI validates every file automatically.
 
+**Made the rule in the app?** You don't need a PR. Share it from DoNotNotify (the app offers once a rule has blocked 25 notifications) or fill in the [contribution form](../../issues/new?template=contribution.yml), and a maintainer will turn it into a list. The rest of this guide is for writing the file yourself.
+
 ## Where files go
 
 - **Per-app list:** `rules/<packageName>/<slug>.json`
@@ -59,3 +61,16 @@ All three must pass; CI runs exactly these. Then fill in the PR checklist.
 ## What reviewers look for
 
 Correct target package, no transactional blocking, sensible patterns, honest `title`/`description`, and `index.json` regenerated. Rules that are too aggressive or too personal (e.g. blocking a specific contact's name) belong in your own fork, not the shared lists.
+
+## For maintainers: turning a contribution issue into a list
+
+Contribution issues (label `contribution`) carry a bare rule export from the app. To ship one:
+
+1. **Review the rule** against the guidelines above. If it's too broad, or the issue doesn't say what it blocks and keeps, ask in the issue before going further.
+2. **Create `rules/<packageName>/<slug>.json`** from the issue's JSON, adding the catalog fields the app doesn't send:
+   - `title` and `description`, written from the issue's "What it blocks / What it keeps" but true to what the patterns actually match.
+   - `maintainer`: the issue author's GitHub handle, so they're credited.
+   - `locale`: the language of the patterns. The app sends the device locale (e.g. `en-US`), which may not be it.
+   - Drop `titleMatchType` / `textMatchType` when their filter is absent, and an `advancedConfig` that only holds defaults (`isTimeLimitEnabled: false`).
+3. **Run the three checks** under [Before you open the PR](#before-you-open-the-pr).
+4. **Open the PR** with `Closes #<issue>` in its description, and credit the contributor in the commit with a `Co-authored-by: <login> <<id>+<login>@users.noreply.github.com>` trailer (`gh api users/<login> -q .id` gives the id).
