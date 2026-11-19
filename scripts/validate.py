@@ -46,6 +46,11 @@ def err(path, msg):
 
 
 def check_filter(path, label, rule, filter_key, match_key):
+    # Validate the match type whenever the key is present, even if its filter
+    # is absent or blank — the schema's enum applies regardless.
+    match_type = rule.get(match_key, "CONTAINS")
+    if not isinstance(match_type, str) or match_type not in MATCH_TYPES:
+        err(path, f"{label}: {match_key} must be one of {sorted(MATCH_TYPES)}, got {match_type!r}")
     value = rule.get(filter_key)
     if value is None:
         return False
@@ -56,10 +61,7 @@ def check_filter(path, label, rule, filter_key, match_key):
         err(path, f"{label}: {filter_key} exceeds {MAX_FILTER_LEN} chars (app drops such rules on import)")
     if value == "":
         return False  # app treats blank as absent
-    match_type = rule.get(match_key, "CONTAINS")
-    if match_type not in MATCH_TYPES:
-        err(path, f"{label}: {match_key} must be one of {sorted(MATCH_TYPES)}, got {match_type!r}")
-    elif match_type == "REGEX":
+    if match_type == "REGEX":
         regexes.append((f"{path}#{label}/{filter_key}", value))
     return True
 
