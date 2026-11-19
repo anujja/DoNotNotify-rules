@@ -99,7 +99,7 @@
       "appName": "Reddit",
       "packageName": "com.reddit.frontpage",
       "titleMatchType": "CONTAINS",
-      "textFilter": "(?i).*(new comment|new post|trending|recommended|mention|reply|mod notice).*",
+      "textFilter": "(?i).*(new comment|new post|trending|recommended).*",
       "textMatchType": "REGEX",
       "ruleType": "DENYLIST",
       "isEnabled": true
