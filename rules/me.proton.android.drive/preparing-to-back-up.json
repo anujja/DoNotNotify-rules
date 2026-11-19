@@ -1,8 +1,8 @@
 {
   "version": 2,
   "locale": "en",
-  "title": "Proton Drive — backup progress",
-  "description": "Blocks the \"Backing up photos to Proton Drive\" / \"Preparing to back up\" status notification. Backup failures and other Proton Drive alerts are unaffected.",
+  "title": "Proton Drive — \"preparing to back up\" notice",
+  "description": "Blocks the brief \"Preparing to back up\" notification Proton Drive shows when a photo backup starts. Upload progress (\"N items left\"), \"Backup complete\" and backup failures still appear.",
   "maintainer": "guarobi",
   "rules": [
     {

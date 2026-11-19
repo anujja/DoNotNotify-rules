@@ -312,7 +312,7 @@
     {
       "path": "rules/com.linkedin.android/missed-notifications.json",
       "title": "LinkedIn — \"missed notifications\" nag",
-      "description": "Blocks LinkedIn's \"Missed Notifications: See updates from LinkedIn that you may have missed\" reminder. Only that exact reminder matches; every other LinkedIn notification is unaffected.",
+      "description": "Blocks LinkedIn's \"Missed Notifications: See updates from LinkedIn that you may have missed\" reminder. Only notifications with that title and text match; other LinkedIn notifications are unaffected.",
       "packages": [
         "com.linkedin.android"
       ],
@@ -506,9 +506,9 @@
       "maintainer": "anujja"
     },
     {
-      "path": "rules/me.proton.android.drive/backup-progress.json",
-      "title": "Proton Drive — backup progress",
-      "description": "Blocks the \"Backing up photos to Proton Drive\" / \"Preparing to back up\" status notification. Backup failures and other Proton Drive alerts are unaffected.",
+      "path": "rules/me.proton.android.drive/preparing-to-back-up.json",
+      "title": "Proton Drive — \"preparing to back up\" notice",
+      "description": "Blocks the brief \"Preparing to back up\" notification Proton Drive shows when a photo backup starts. Upload progress (\"N items left\"), \"Backup complete\" and backup failures still appear.",
       "packages": [
         "me.proton.android.drive"
       ],

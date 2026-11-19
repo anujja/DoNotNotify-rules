@@ -2,7 +2,7 @@
   "version": 2,
   "locale": "en",
   "title": "LinkedIn — \"missed notifications\" nag",
-  "description": "Blocks LinkedIn's \"Missed Notifications: See updates from LinkedIn that you may have missed\" reminder. Only that exact reminder matches; every other LinkedIn notification is unaffected.",
+  "description": "Blocks LinkedIn's \"Missed Notifications: See updates from LinkedIn that you may have missed\" reminder. Only notifications with that title and text match; other LinkedIn notifications are unaffected.",
   "maintainer": "o-kangal",
   "rules": [
     {
