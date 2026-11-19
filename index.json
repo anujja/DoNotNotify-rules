@@ -298,7 +298,7 @@
     {
       "path": "rules/com.linkedin.android/engagement.json",
       "title": "LinkedIn — engagement bait",
-      "description": "Blocks engagement-bait notifications (\"job recommended\", \"people you may know\", \"someone viewed your profile\", \"we found a job\") from LinkedIn. Direct messages and account alerts are unaffected.",
+      "description": "Blocks engagement-bait notifications (\"job recommended\", \"people you may know\", \"someone viewed your profile\", \"we found a job\", \"recommended for you\") from LinkedIn. Direct messages and account alerts are unaffected.",
       "packages": [
         "com.linkedin.android"
       ],
@@ -410,7 +410,7 @@
     {
       "path": "rules/com.tinder/engagement.json",
       "title": "Tinder — engagement bait",
-      "description": "Blocks engagement-bait notifications (\"new match\", \"someone likes you\", \"message from\", \"you got a match\") from Tinder. Direct messages and account alerts are unaffected.",
+      "description": "Blocks engagement-bait notifications (\"new match\", \"someone likes you\", \"you got a match\", \"top picks\") from Tinder. Direct messages and account alerts are unaffected.",
       "packages": [
         "com.tinder"
       ],
