@@ -310,6 +310,20 @@
       "maintainer": "anujja"
     },
     {
+      "path": "rules/com.linkedin.android/missed-notifications.json",
+      "title": "LinkedIn — \"missed notifications\" nag",
+      "description": "Blocks LinkedIn's \"Missed Notifications: See updates from LinkedIn that you may have missed\" reminder. Only notifications with that title and text match; other LinkedIn notifications are unaffected.",
+      "packages": [
+        "com.linkedin.android"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "o-kangal"
+    },
+    {
       "path": "rules/com.mygate.user/allow-essentials.json",
       "title": "Mygate — essentials only (ALLOWLIST)",
       "description": "ALLOWLIST: only visitor/delivery check-in, approval, decline and invite notifications get through — everything else from MyGate is blocked. Allowlist rules block all non-matching notifications from the app.",
@@ -490,6 +504,20 @@
       ],
       "locale": "en",
       "maintainer": "anujja"
+    },
+    {
+      "path": "rules/me.proton.android.drive/preparing-to-back-up.json",
+      "title": "Proton Drive — \"preparing to back up\" notice",
+      "description": "Blocks the brief \"Preparing to back up\" notification Proton Drive shows when a photo backup starts. Upload progress (\"N items left\"), \"Backup complete\" and backup failures still appear.",
+      "packages": [
+        "me.proton.android.drive"
+      ],
+      "ruleCount": 1,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "en",
+      "maintainer": "guarobi"
     },
     {
       "path": "rules/tv.twitch.android.app/engagement.json",
