@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "locale": "en",
+  "title": "Link to Windows — connection status",
+  "description": "Blocks \"Your devices are connected.\" and \"Connecting to your PC...\" status notifications from Link to Windows. Disconnect alerts, camera-in-use notices, app sharing, and pairing prompts are unaffected. Note: these are ongoing notifications and may stay in the shade on older Android versions.",
+  "maintainer": "recregt",
+  "rules": [
+    {
+      "appName": "Link to Windows",
+      "packageName": "com.microsoft.appmanager",
+      "titleFilter": "(?i)^(your devices are connected\\.?|connecting to your pc(\\.{3}|…)?)\\s*$",
+      "titleMatchType": "REGEX",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}
