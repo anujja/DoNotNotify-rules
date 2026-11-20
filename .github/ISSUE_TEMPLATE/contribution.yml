@@ -1,0 +1,42 @@
+name: Share a rule
+description: Share a rule you made in DoNotNotify (the app's Share button fills this in for you)
+title: "[Contribution] "
+labels: [contribution]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing! A maintainer will review your rule and turn it into a list in this repo, crediting you as its maintainer.
+        Reviewers check first that the rule doesn't block anything important, so please fill in what it blocks and what it keeps.
+  - type: input
+    id: app
+    attributes:
+      label: App
+      description: App name and package, e.g. `Flipkart (com.flipkart.android)`
+    validations:
+      required: true
+  - type: textarea
+    id: blocks
+    attributes:
+      label: What it blocks
+      description: One or two example notifications this rule removes (redact anything personal).
+      placeholder: |
+        Title: MEGA SALE is live!
+        Text: Flat 80% off, limited time only
+    validations:
+      required: true
+  - type: textarea
+    id: keeps
+    attributes:
+      label: What it keeps
+      description: Notifications from this app that must still arrive (order updates, OTPs, messages…).
+    validations:
+      required: false
+  - type: textarea
+    id: rule-json
+    attributes:
+      label: Rule JSON
+      description: Filled in by the app. Sharing by hand? Export the rule from DoNotNotify and paste the JSON here.
+      render: json
+    validations:
+      required: true

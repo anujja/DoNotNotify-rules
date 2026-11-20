@@ -99,7 +99,7 @@
       "appName": "Reddit",
       "packageName": "com.reddit.frontpage",
       "titleMatchType": "CONTAINS",
-      "textFilter": "(?i).*(new comment|new post|trending|recommended|mention|reply|mod notice).*",
+      "textFilter": "(?i).*(new comment|new post|trending|recommended).*",
       "textMatchType": "REGEX",
       "ruleType": "DENYLIST",
       "isEnabled": true
@@ -117,7 +117,7 @@
       "appName": "Tinder",
       "packageName": "com.tinder",
       "titleMatchType": "CONTAINS",
-      "textFilter": "(?i).*(new match|someone likes you|message from|you got a match|top picks).*",
+      "textFilter": "(?i).*(new match|someone likes you|you got a match|top picks).*",
       "textMatchType": "REGEX",
       "ruleType": "DENYLIST",
       "isEnabled": true
@@ -153,7 +153,7 @@
       "appName": "LinkedIn",
       "packageName": "com.linkedin.android",
       "titleMatchType": "CONTAINS",
-      "textFilter": "(?i).*(job recommended|people you may know|someone viewed your profile|we found a job|new message|recommended).*",
+      "textFilter": "(?i).*(job recommended|people you may know|someone viewed your profile|we found a job|recommended for you).*",
       "textMatchType": "REGEX",
       "ruleType": "DENYLIST",
       "isEnabled": true
