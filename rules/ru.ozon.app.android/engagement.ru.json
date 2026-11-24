@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "locale": "ru",
+  "title": "Ozon — review requests and Morkovsk prizes",
+  "description": "Blocks Ozon's \"Вам понравился заказ?\" (\"Did you like your order?\") review prompts and \"Вы выиграли морковки!\" (\"You won carrots!\") notices from the in-app Morkovsk game. Only notifications whose title contains one of those phrases match; order, delivery and payment updates still arrive.",
+  "maintainer": "CaesarRulezzz",
+  "rules": [
+    {
+      "appName": "OZON",
+      "packageName": "ru.ozon.app.android",
+      "titleFilter": "Вам понравился заказ?",
+      "titleMatchType": "CONTAINS",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    },
+    {
+      "appName": "OZON",
+      "packageName": "ru.ozon.app.android",
+      "titleFilter": "Вы выиграли морковки!",
+      "titleMatchType": "CONTAINS",
+      "ruleType": "DENYLIST",
+      "isEnabled": true
+    }
+  ]
+}
