@@ -534,6 +534,20 @@
       "maintainer": "guarobi"
     },
     {
+      "path": "rules/ru.ozon.app.android/engagement.ru.json",
+      "title": "Ozon — review requests and Morkovsk prizes",
+      "description": "Blocks Ozon's \"Вам понравился заказ?\" (\"Did you like your order?\") review prompts and \"Вы выиграли морковки!\" (\"You won carrots!\") notices from the in-app Morkovsk game. Only notifications whose title contains one of those phrases match; order, delivery and payment updates still arrive.",
+      "packages": [
+        "ru.ozon.app.android"
+      ],
+      "ruleCount": 2,
+      "ruleTypes": [
+        "DENYLIST"
+      ],
+      "locale": "ru",
+      "maintainer": "CaesarRulezzz"
+    },
+    {
       "path": "rules/tv.twitch.android.app/engagement.json",
       "title": "Twitch — engagement bait",
       "description": "Blocks engagement-bait notifications (\"live now\", \"stream starting\", \"recommended for you\", \"new clip\") from Twitch. Direct messages and account alerts are unaffected.",
